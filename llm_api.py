@@ -4,11 +4,15 @@ import openai
 import base64
 import sys
 import os
+from dotenv import load_dotenv
 from PIL import Image, ImageEnhance
 import io
 
+# Load environment variables
+load_dotenv()
+
 # Set your OpenRouter API key here
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = os.getenv("OPENROUTER_API_KEY")
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 OPENAI_MODEL = "nvidia/nemotron-nano-12b-v2-vl:free"
