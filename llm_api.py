@@ -8,7 +8,7 @@ from PIL import Image, ImageEnhance
 import io
 
 # Set your OpenRouter API key here
-OPENROUTER_API_KEY = "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"
+OPENROUTER_API_KEY = "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"
 OPENROUTER_BASE_URL = "https://openrouter.ai/api/v1"
 
 OPENAI_MODEL = "nvidia/nemotron-nano-12b-v2-vl:free"
